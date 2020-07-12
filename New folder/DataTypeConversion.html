@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Data Type Conversion in Javascript</title>
+</head>
+
+<body>
+<script>
+var my_String = "56.02 Degree Contrigrade";
+var my_Int;
+var my_Float;
+document.write("<b>Data Type Conversion in JavaScript</b><br><br>")
+document.write("\" " +  my_String + "\" is "+ parseInt(my_String,10) +  " as  an integer" + "<br><br>"); //direct without variables
+
+my_Int = parseInt(my_String);  //using variables
+
+document.write("\" " +  my_String + "\" When Converted into an Integer Value equals  " + my_Int +"<br><br>");
+
+my_Float = parseFloat(my_String);    //using Variables    
+
+document.write("\" " +  my_String + "\" When Converted into an Floating point number equals  " + my_Float);
+
+
+</script>
+
+
+</body>
+</html>

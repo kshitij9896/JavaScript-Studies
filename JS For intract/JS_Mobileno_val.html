@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title></title>
+        
+    <script type="text/javascript">
+        function Testno()
+        {
+
+            var text = document.getElementById("no").value;
+
+            var regx = /[7-9][0-9]{9}$/;
+
+            if(regx.test(text))
+            {
+                document.getElementById("lbltxt").innerHTML="Valid";
+                document.getElementById("lbltxt").style.visibility="visible";
+                document.getElementById("lbltxt").style.color="green";
+                alert('welcome');
+                
+            }
+            else{
+                document.getElementById("lbltxt").innerHTML="Invalid";
+                document.getElementById("lbltxt").style.visibility="visible";
+                document.getElementById("lbltxt").style.color="red";
+                alert('Please Enter Valid Number...');
+            }
+
+
+        }
+
+    
+    </script>
+    
+    </head>
+<body>
+    <form>
+ <input id="no" type="text" placeholder="Enter Mobile no"/><br>
+ <label id="lbltxt" style="color:red; visibility: hidden;">Invalid</label>
+<br>
+<button type="submit" onclick="Testno()">Submit
+    </button>
+    </form>
+</body>
+</html>

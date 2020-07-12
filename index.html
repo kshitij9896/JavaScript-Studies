@@ -1,0 +1,208 @@
+<html>
+<head>
+<title>JavaScript Full Demostration</title>
+
+</head>
+<body>
+document.write(d);<br>
+<script>
+	//alert("Welcome To JavaScript");
+	document.write("Welcome To JS");
+	var a ="kshitij";
+	var b=10;
+	var c=10;
+	var d = b+c;
+	document.write(d,"<br><br>");
+	var Increment = b++;
+	document.write(Increment,"<br>");
+	
+	var decrement = b--;
+	document.write(decrement)
+      
+         var e = b>c;
+	 document.write("<br>",e);
+
+	var check = a==b;
+	document.write("<br>",check);	
+
+if(b>c)
+{
+document.write("<br>B is Greater....");
+
+}
+else if(b==c)
+{
+document.write("<br>The Values Are Same...");
+}
+
+else
+{
+document.write("<br>C is Greater...");
+}
+
+var p=10;
+var q=11;
+switch(p){
+
+	case 10:
+		document.write("<br>its Case 10");
+		break;
+	case 11:
+		document.write("<br>its Case 11");
+		break;
+}
+
+var count = 5;
+while(count<10)
+{
+	document.write("<br>JavaScript");
+	count++; 
+}
+
+do
+{
+document.write("<br>JS");
+count++;
+}while(count<10);
+
+
+
+for(var i=0;i<count;i++)
+
+{
+document.write("<br>Javascript....");
+}
+
+
+//var array = new Array("kshitij","bansod");
+var array = ["Kshitij"];
+//array[0] = "JS";
+//array[1] = "Jquery";
+document.write(array[0]);
+
+//concating two array variables
+
+var alpha = ["a","b","c"];
+var numeric = [1,2,3,4,5];
+
+var alphanumeric =alpha.concat(numeric);
+document.write("<br><br>alphanumeric"+ alphanumeric);
+
+//functions in js
+function sum()
+{
+var x = 10;
+var y = 10;
+var z = x+y;
+document.write("<br>Addition of two no using functions"+z);	
+
+}
+
+sum();
+
+
+function sum1(a,b)
+{
+var z = a+b;
+document.write("<br>Addition of two no using functions"+z);	
+
+
+}
+sum1(50,50);
+
+
+//String in JS
+
+var str="Javascript";
+var answer= str.length;
+document.write("<br>Calculating The length of String"+ answer);
+
+var answer1 = str.charAt(4);
+document.write("<br>String Using the charAt method "+ answer1);
+
+document.write("<br>String Using the charAt method "+ str.indexOf('s'));
+
+
+//locally compare string
+
+var st = new String("js");
+var st1 = str.localeCompare("js");
+document.write("<br>Locale Compare" + st1);
+
+
+//using JavaScript Events
+function myfun()
+{
+document.write("You clicked the button");
+}
+
+function cal()
+{
+document.example.answer.value = 
+eval(document.example.calculator.value)
+
+
+}
+
+function myfun1(){
+
+//debugger;
+window.location = "Demo.html";
+}
+
+function confirmation()
+{
+var ans = confirm("Hiiii");
+if(ans){
+ alert("welcome");
+
+}
+else
+{
+alert("Sorry!!!!");
+}
+}
+
+function myprompt()
+{
+var str=prompt("Hii Please Enter Your Name.... ");
+alert( "Thanks for Visiting...."+str);
+
+}
+
+//used for round up values using Math Object
+var a = Math.floor(10.99);
+document.write("<br><br>Using Math Floor"+a);
+var y = Math.log(10);
+document.write("<br><br>Using Math Log Values"+y);
+var z = Math.sqrt(25);
+document.write("<br><br>Using Math Squareroot"+z);
+var o = Math.random();
+document.write("<br><br>Using Math Random "+o);
+
+
+</script>
+
+<button onclick="myfun()">Onclick</button>
+<button onmouseover="myfun()">OnMouseOver</button>
+<button onmousedown="myfun()">OnMouseDown</button>
+<button onmouseout="myfun()">OnMouseOut</button>
+
+<form name="example">
+<input type="text" size="10" name="calculator"><br>
+<input type="button" name="b1" value="Calculate" onClick="cal()">
+<input type="reset" name="b2" value="Reset" onClick="cal()"><br>
+Answer :<input type="text" name="answer"><br>
+
+<button onmouseout="myfun1()">WindowLocationEvent</button>
+
+<button type="text" onclick ="confirmation()">confirm</button>
+
+<button type="text" onclick="myprompt()">Prompt</button>
+<!--maths-->
+
+
+
+</form>
+</body>
+</html>

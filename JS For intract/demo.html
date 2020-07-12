@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+
+            JavaScript Converting the String into numbers...
+        </title>
+
+    </head>
+    <body>
+
+         <script type="text/JavaScript">
+
+          function addNumbers(){
+
+              var firstnumber = parseInt(document.getelementById("txt1").value());
+              var secondnumber = parseInt(document.getelementById("txt2").value());
+
+              document.getelementById("txt3").value = firstnumber + secondnumber;
+          }
+
+         </script>
+
+         <form name="demo" action="JavaScript2.html">
+
+            <table style="border: 1px solid black; font-family: arial">
+                <tr>
+                    <td>
+                         First Number:
+                    </td>
+                    <td>
+                     <input type="text" name="txt1" id="txt1">
+                        </td>
+                    </tr>      
+                    <tr>
+                        <td>
+                                Second Number:
+                           </td>
+                           <td>
+                            <input type="text" name="txt2" id="txt2">
+                               </td>
+                         </tr>
+                         <tr>
+                               <td>
+                                    Result
+                               </td>
+                               <td>
+                                <input type="text" name="txt3" id="txt3">
+                                   </td>
+                      </tr>
+                      </table>
+
+         <input type="submit" id="sub" value="Submit" onClick="addNumbers()">
+    </form>
+
+        </body>
+</html>

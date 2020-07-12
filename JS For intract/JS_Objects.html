@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Introduction to Objects</title>
+<script type="text/javascript">
+
+
+
+function Cars(car_brand,car_model,price){   //This is a Constructorsss
+
+this.car_brand = car_brand;
+this.car_model = car_model;
+this.price = price;
+this.cars = function()
+{
+document.write("<h2>This Cars is My Favourite Car</h2>");
+ }
+}
+
+
+var c1 = new Cars("Audi","A6",3400000);   //object creation
+document.write(c1.car_model);
+
+</script>
+</head>
+</html>

@@ -1,0 +1,72 @@
+<html>
+<head>
+<style>
+span{
+color:red;
+font-weight:bold;
+
+}
+
+
+h1{
+font-weight:bold;
+font-size:18px;
+color:blue;
+font-family:'Times New Roman';
+}
+
+input[type=text]
+{
+font-align:left;
+font-weight:bold;
+border:2px solid black; 
+
+}
+
+input[type=password]
+{
+font-align:left;
+font-weight:bold;
+border:2px solid black; 
+
+}
+</style>
+</head>
+<body>
+
+<form name="myform" onsubmit="return Validation()" action="#">
+
+<h1>UserName :</h1>  <input type="text" id="user">  <span id="username"> </span><br><br>
+<h1>Password :</h1>  <input type="password" id="pass">  <span id="password"></span>
+<br><br><input type="submit" value="Submit">
+
+
+</form>
+<script>
+
+function Validation()
+{
+var un = document.getElementById("user").value;
+var ps = document.getElementById("pass").value;
+
+if(un == "")
+{
+ document.getElementById("username").innerHTML = "Please Enter Valid Username";
+	return false;
+
+}
+
+else(ps=="")
+{
+document.getElementById("password").innerHTML = "Please Enter Valid Password...";
+return false;
+}
+
+//else{
+	//alert("Done");
+	//return true;
+//}
+}
+</script>
+</body>
+</html>

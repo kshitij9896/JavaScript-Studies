@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Form Validation using JavaScript</title>
+
+<script type="text/javascript">
+
+function validate()
+{
+
+    var Username = document.getElementById("uname");
+    var Password = document.getElementById("password");
+
+    if(Username.value.trim()=="" || Password.value.trim()=="")
+    {
+
+        alert("No Blank values are allowed");
+        return false;
+    }
+    else{
+           true;
+    }
+//checking the length
+var Username = document.getElementById("uname");
+    var Password = document.getElementById("password");
+
+    if(Username.value.trim()=="" || Password.value.trim()=="")
+    {
+
+        alert("No Blank values are allowed");
+        return false;
+    }
+    else{
+           true;
+    }
+}
+
+
+</script>
+</head>
+<body>
+<form onsubmit="return validate()"  action="JSForm1.html" name="FirstForm">
+    <input id="uname" type="text" placeholder="Enter Username">
+  <br><br>
+  <input id="password" type="text" placeholder="Enter Password">
+  <br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+
+</html>
